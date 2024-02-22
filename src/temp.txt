@@ -1,0 +1,5 @@
+{data.map(item => (
+        <li key={item.id}>
+          <a href={item.id}>{item.title}</a>
+        </li>
+      ))}
