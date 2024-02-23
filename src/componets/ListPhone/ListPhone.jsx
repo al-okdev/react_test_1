@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export function ListPhone(){
 
@@ -25,9 +26,12 @@ export function ListPhone(){
   
         {data.map(item => (
           <li key={item.id}>
-            <a href={"phones/2"}> {item.title} === {item.price}<br/><br/>
+            <Link to={`/phone/${item.id}`}>
+
+              {item.title} === {item.price}<br/>
               <img src={item.thumbnail} />
-            </a>
+              
+              </Link>
           </li>
         ))}
         

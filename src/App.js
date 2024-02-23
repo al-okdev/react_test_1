@@ -31,7 +31,7 @@ function App() {
         <Route path="/" element={<Main />} >
             <Route index element={<div>Главная страница сайта</div> } />
             <Route path="phones" element={<ListPhone />} />
-            <Route path='phones/:id' element={<DetailPhone />} />
+            <Route path='phone/:id' element={<DetailPhone />} />
 
             <Route path="*" element={<Page404 />} />
           </Route>
