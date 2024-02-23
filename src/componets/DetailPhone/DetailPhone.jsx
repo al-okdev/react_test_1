@@ -35,7 +35,10 @@ export function DetailPhone(){
         {value}
       </p>
     ))} */}
-    {data.title}
+
+    <p>{data.title}</p>
+    <p>Цена: {data.price}</p>
+    <img src={data.thumbnail} />
 
     </>
   )
